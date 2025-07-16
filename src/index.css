@@ -596,6 +596,12 @@ path {
   margin-left: auto;
   margin-right: auto;
 }
+body.light-theme .skills-description {
+  color: #000;
+}
+body:not(.light-theme) .skills-description {
+  color: #fff;
+}
 
 .skills-grid {
   display: grid;
