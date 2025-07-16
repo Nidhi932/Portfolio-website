@@ -15,5 +15,333 @@
     <script src="sendMail.js" type="module" defer></script>
     <noscript>Sorry, your browser does not support JavaScript!</noscript>
   </head>
-  <body></body>
+  <body>
+    <div class="container" id="containerForScroll">
+        <section class="home-page scroll" id="home">
+            <section class="nav-bar">
+                <section class="profile-container">
+                    <p class="initial2">N</p>&nbsp;IDHI&nbsp;&nbsp;PANDEY</p>
+                </section>
+                <ul class="ul">
+                    <li class="nav-items" onclick="location.href='#about'">
+                        <img src="/assets/icons/NavIcon/About.svg" alt="" class="nav-icons" />
+                        <span class="nav-text">About</span>
+                    </li>
+                    <li class="nav-items" onclick="location.href='#work'">
+                        <img src="/assets/icons/NavIcon/Work.svg" alt="" width="25" height="25" class="nav-icons" />
+                        <span class="nav-text">Projects</span>
+                    </li>
+                    <li class="nav-items" onclick="location.href='#contact'">
+                        <img src="/assets/icons/NavIcon/Contact.svg" alt="" width="25" height="25" class="nav-icons" />
+                        <span class="nav-text">Contact</span>
+                    </li>
+                    <li class="toggle-container">
+                        <label for="switch" class="toggle">
+                            <input type="checkbox" class="input" id="switch" />
+                            <div class="icon icon--moon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff" 
+                                    width="25" height="25">
+                                    <path fill-rule="evenodd"
+                                        d="M9.528 1.718a.75.75 0 01.162.819A8.97 8.97 0 009 6a9 9 0 009 9 8.97 8.97 0 003.463-.69.75.75 0 01.981.98 10.503 10.503 0 01-9.694 6.46c-5.799 0-10.5-4.701-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 01.818.162z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                            <div class="icon icon--sun">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff"
+                                    width="30" height="30">
+                                    <path
+                                        d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z">
+                                    </path>
+                                </svg>
+                            </div>
+                        </label>
+                    </li>
+                </ul>
+            </section>
+            <section class="main-page">
+                <span class="line"></span>
+                <section class="info-box">
+                    <p class="name2">Hi, I'm <span class="name3">&nbsp;Nidhi !&nbsp;</span></p>
+                    <h1 class="role">
+                        Frontend <br />Developer
+                        
+                    </h1>
+                    <p class="intro1">
+                        I specialize in crafting intuitive and user-friendly frontend <br />solutions that merge innovation with functionality.
+                    </p>
+                    <section class="resume-contact">
+                        <button class="home-resume">
+                            <a href="/assets/Resume/Nidhi_Pandey.pdf" target="_blank">Resume
+                                <img src="/assets/icons/OtherIcons/Arrow.svg" width="25" height="25" aria-label="resume" class="navigate-icon"
+                                    alt="" />
+                            </a>
+                        </button>
+                        <button class="home-contact" onclick="location.href='#contact'">Contact
+                            <img src="/assets/icons/NavIcon/Contact.svg" width="25" height="25" aria-label="contact" class="navigate-icon"
+                                alt="" />
+                        </button>
+                    </section>
+                </section>
+                <section>
+                    <img class="coder-img" src="/assets/images/CoderImg.png" alt="Coder" loading="lazy">
+                </section>
+                <section class="intro-container">
+                    <p class="intro2">I'm passionate about building seamless digital experiences that are responsive, accessible, and optimized for all devices.
+                    </p>
+                    <span class="mouse-btn">
+                        <span class="mouse-scroll"></span>
+                    </span>
+                    <p class="intro3">With a focus on simplicity, clarity, and visual appeal, I bring each project to life one thoughtful detail and pixel at a time.
+                    </p>
+                </section>
+            </section>
+        </section>
+        <hr />
+        <section class="about-page scroll" id="about">
+            <p class="initial" onclick="location.href='#home'"><span>N</span></p>
+            <div class="nav-section">
+                <img src="/assets/icons/NavIcon/Home.svg"  alt="" onclick="location.href='#home'" class="nav-icon" />
+                <img src="/assets/icons/NavIcon/Work.svg"  alt="" onclick="location.href='#work'" class="nav-icon" />
+                <img src="/assets/icons/NavIcon/Contact.svg" alt="" onclick="location.href='#contact'"
+                    class="nav-icon" />
+            </div>
+            
+            <div class="skills-container">
+                <h2 class="section-title">Skills Known</h2>
+                
+                <p class="skills-description">
+                    I'm passionate about creating seamless digital experiences through modern web technologies. My expertise spans across frontend frameworks, backend development, and design systems. 
+                </p>
+        
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <img src="/assets/icons/SkillsIcon/react-js.svg" alt="React">
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <img src="/assets/icons/SkillsIcon/javascript.svg" alt="JavaScript">
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <img src="/assets/icons/SkillsIcon/tailwindcss.svg" alt="TypeScript">
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <img src="/assets/icons/SkillsIcon/html.svg" alt="Html">
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <img src="/assets/icons/SkillsIcon/css.svg" alt="css">
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <img src="/assets/icons/SkillsIcon/nodejs.svg" alt="Database">
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <img src="/assets/icons/SkillsIcon/mongodb.svg" alt="Additional Skill">
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <img src="/assets/icons/SkillsIcon/python.svg" alt="Additional Skill">
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <img src="/assets/icons/SkillsIcon/figma.svg" alt="Additional Skill">
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            
+            <button id="scrollBtn1" class="scrollBtns">
+                <img src="/assets/icons/OtherIcons/Arrow.svg" width="25" height="25" alt="" class="scroll-icon" />
+            </button>
+        </section>
+        <hr />
+        <section class="work-page scroll" id="work">
+            <p class="initial" onclick="location.href='#home'"><span>N</span></p>
+            <div class="nav-section">
+                <img src="/assets/icons/NavIcon/Home.svg" alt=""  onclick="location.href='#home'" class="nav-icon" />
+                <img src="/assets/icons/NavIcon/About.svg" alt=""  onclick="location.href='#about'" class="nav-icon" />
+                <img src="/assets/icons/NavIcon/Contact.svg" alt=""  onclick="location.href='#contact'"
+                    class="nav-icon" />
+            </div>
+            <section class="projects-section">
+                <h2 class="section-title">Featured Projects</h2>
+                
+                <div class="projects-grid">
+                    <div class="project-card" data-project="1">
+                        <div class="project-image">
+                            <div class="window-controls">
+                                <div class="control-dot red"></div>
+                                <div class="control-dot yellow"></div>
+                                <div class="control-dot green"></div>
+                            </div>
+                            <div class="image-content">
+                                <img src="/assets/images/projectImages/DevShare.png" alt="DevShares" />
+                            </div>
+                        </div>
+                        <div class="project-text">
+                            <div class="main-title">DevShares</div>
+                            <div class="sub-title">full-stack web application that enables real-time screen sharing, collaborative coding, and
+                                secure file sharing</div>
+                            <div class="tech-stack">
+                                <span class="tech-tag">MERN Stack</span>
+                                <span class="tech-tag">Socket.io</span>
+                                <span class="tech-tag">WebRTC</span>
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <a class="btn btn-primary" href="https://devsharess.vercel.app/" target="_blank">
+                                View Details
+                            </a>
+                            <a class="btn btn-secondary" href="https://github.com/Nidhi932/DevShares" target="_blank">
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+        
+                    <div class="project-card" data-project="2">
+                        <div class="project-image">
+                            <div class="window-controls">
+                                <div class="control-dot red"></div>
+                                <div class="control-dot yellow"></div>
+                                <div class="control-dot green"></div>
+                            </div>
+                            <div class="image-content">
+                                <img src="/assets/images/projectImages/portfolio.png" alt="Portfolio" />
+                            </div>
+                        </div>
+                        <div class="project-text">
+                            <div class="main-title">Portfolio</div>
+                            <div class="sub-title">Collaborative project management tool with real-time updates</div>
+                            <div class="tech-stack">
+                                <span class="tech-tag">Reactjs</span>
+                                <span class="tech-tag">Tailwindcss</span>
+                                <span class="tech-tag">Vite</span>
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <a class="btn btn-primary" href="https://nidhi-pandey.vercel.app/" target="_blank">
+                                View Details
+                            </a>
+                            <a class="btn btn-secondary" href="https://github.com/Nidhi932/Portfolio-website" target="_blank">
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+        
+                    <div class="project-card" data-project="3">
+                        <div class="project-image">
+                            <div class="window-controls">
+                                <div class="control-dot red"></div>
+                                <div class="control-dot yellow"></div>
+                                <div class="control-dot green"></div>
+                            </div>
+                            <div class="image-content">
+                                <img src="/assets/images/projectImages/Order_food.png" alt="Order_food" />
+                            </div>
+                        </div>
+                        <div class="project-text">
+                            <div class="main-title">Food Order</div>
+                            <div class="sub-title"> Responsive food ordering platform enabling users to browse
+                                menus and manage cart items.</div>
+                            <div class="tech-stack">
+                                <span class="tech-tag">Reactjs</span>
+                                <span class="tech-tag">Tailwindcss</span>
+                                <span class="tech-tag">Vite</span>
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <a class="btn btn-primary" href="https://order-food-one-theta.vercel.app/" target="_blank">
+                                View Details
+                            </a>
+                            <a class="btn btn-secondary" href="https://github.com/Nidhi932/OrderFood" target="_blank">
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+        
+                    
+                </div>
+            </section>
+            <button id="scrollBtn2" class="scrollBtns">
+                <img src="/assets/icons/OtherIcons/Arrow.svg" width="25" height="25" alt="" class="scroll-icon" />
+            </button>
+        </section>
+        <hr />
+        <section class="contact-page scroll" id="contact">
+            <p class="initial" onclick="location.href='#home'"><span>N</span></p>
+            <div class="nav-section">
+                <img src="/assets/icons/NavIcon/Home.svg" alt="" onclick="location.href='#home'" class="nav-icon" />
+                <img src="/assets/icons/NavIcon/About.svg" alt="" onclick="location.href='#about'" class="nav-icon" />
+                <img src="/assets/icons/NavIcon/Work.svg" alt="" onclick="location.href='#work'" class="nav-icon" />
+            </div>
+            <section class="contact-title">
+                <h1>Send a message!</h1>
+            </section>
+            <section class="contact-title">
+                <p>Got a question or proposal, or just want to say hello? Go ahead.</p>
+            </section>
+            <section class="contact-inputs">
+                <form class="contact-form" id="contactForm" autocomplete="on">
+                    <span>
+                        <label for="senderName">Name:
+                            <input id="senderName" class="contact-input1" placeholder="&nbsp;Your Name..." type="text"
+                                name="name" autocomplete="on" required />
+                        </label>
+                        <label for="senderEmail">E-mail:
+                            <input id="senderEmail" class="contact-input2" placeholder="&nbsp;Your E-mail..." type="email"
+                                name="email" autocomplete="on" required />
+                        </label>
+                    </span>
+                    <label class="input3" for="message">Message:
+                        <input id="message" class="contact-input3" placeholder="&nbsp;Type your message..." name="message"
+                            required />
+                    </label>
+                    <button type="submit" class="contact-button" id="send-btn">Send
+                        <img src="/assets/icons/OtherIcons/paper-plane.svg" alt="" class="send-icon" />
+                    </button>
+                </form>
+            </section>
+            <section class="contact-socials">
+                <a href="https://github.com/Nidhi932?tab=repositories" target="_blank">
+                    <img src="/assets/icons/Social/Github2.svg" alt="gh" class="socials" />
+                </a>
+                <a href="https://leetcode.com/u/Nidhi932/" target="_blank">
+                    <img src="/assets/icons/Social/Leetcode.svg" alt="ln" class="socials" />
+                </a>
+                <a href="https://www.linkedin.com/in/nidhi-pandey-80a774245/" target="_blank">
+                    <img src="/assets/icons/Social/Linkedin.svg" alt="yt" class="socials" />
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="/assets/icons/Social/Instagram.svg" alt="ig" class="socials" />
+                </a>
+            </section>
+            
+            <section>©<span id="year">2025</span> &lt;Nidhi&sol;&gt;</section>
+            <button id="scrollBtn3" class="scrollBtns">
+                <img src="/assets/icons/OtherIcons/Arrow.svg" width="25" height="25" alt="" class="scroll-icon" />
+            </button>
+        </section>
+    </div>
+  </body>
 </html>

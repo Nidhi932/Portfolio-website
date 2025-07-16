@@ -32,3 +32,48 @@ if (storedTheme) {
     bodyTheme.classList.add("light-theme");
   }
 }
+// Theme toggle
+switchButton.addEventListener("click", () => {
+  if (bodyTheme.classList.contains("dark-theme")) {
+    bodyTheme.classList.replace("dark-theme", "light-theme");
+    localStorage.setItem("theme", "light");
+  } else {
+    bodyTheme.classList.replace("light-theme", "dark-theme");
+    localStorage.setItem("theme", "dark");
+  }
+});
+
+// scroll to top
+document.getElementById("scrollBtn1").addEventListener("click", function () {
+  document.getElementById("containerForScroll").scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth",
+  });
+});
+document.getElementById("scrollBtn2").addEventListener("click", function () {
+  document.getElementById("containerForScroll").scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth",
+  });
+});
+document.getElementById("scrollBtn3").addEventListener("click", function () {
+  document.getElementById("containerForScroll").scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth",
+  });
+});
+const observerOptions = {
+  threshold: 0.1,
+  rootMargin: "0px 0px -50px 0px",
+};
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("animate");
+    }
+  });
+}, observerOptions);
