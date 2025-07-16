@@ -77,3 +77,16 @@ const observer = new IntersectionObserver((entries) => {
     }
   });
 }, observerOptions);
+// Observe all project cards
+document.querySelectorAll(".project-card").forEach((card) => {
+  observer.observe(card);
+});
+
+// Insights panel function
+function openInsightsPanel(projectName) {
+  alert(`Opening insights for: ${projectName}`);
+  // You can replace this with a modal or detailed view
+}
+
+// Optional: Add smooth scrolling for better UX
+document.documentElement.style.scrollBehavior = "smooth";

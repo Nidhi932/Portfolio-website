@@ -116,3 +116,71 @@ body {
   color: #ffffff;
   user-select: none;
 }
+/* nav-section in each page*/
+.nav-section {
+  position: absolute;
+  top: 18px;
+  right: 10px;
+  display: flex;
+  gap: 10px;
+  z-index: 10;
+  width: fit-content;
+  height: fit-content;
+  padding: 2px 5px;
+}
+.nav-icon {
+  /* border: 2px solid #ffffff; */
+  border-radius: 3px;
+  background: #df3c39;
+  margin: 5px;
+  padding: 5px;
+  cursor: pointer;
+  user-select: none;
+  /* box-shadow: 1px 1px rgb(36, 39, 32); */
+}
+.nav-icon:hover {
+  box-shadow: 1px 1px 5px rgb(36, 39, 32);
+  transition-duration: 200ms;
+}
+.nav-text {
+  color: #fff;
+}
+
+/* line */
+
+.line {
+  height: 90vh;
+  width: 5px;
+  background: #df3c39;
+  transform: skew(30deg, 20deg);
+}
+/* scroll down */
+.mouse-btn {
+  border: 3px solid #df3c39;
+  border-radius: 20px;
+  width: 55px;
+  height: 65px;
+  display: flex;
+  margin: 130px 50px 30px 50px;
+  padding: 5px;
+}
+
+.mouse-scroll {
+  display: block;
+  width: 7px;
+  height: 7px;
+  background: #df3c39;
+  border-radius: 50%;
+  margin: auto;
+  animation: scrolling 1.25s linear infinite;
+}
+
+@keyframes scrolling {
+  0% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(10px);
+  }
+}
