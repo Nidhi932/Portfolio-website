@@ -866,3 +866,267 @@ body {
 
   color: white;
 }
+.projects-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 0;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  background: #fff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.light-theme .section-title {
+  background: linear-gradient(to right, #000, #000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+/* Shared default styling */
+.project-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 320px;
+  height: 470px;
+  border-radius: 12px;
+  padding: 0.7rem;
+  will-change: transform, opacity;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.3s ease;
+}
+
+/* 🌙 Dark Theme */
+body:not(.light-theme) .project-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 0.5px solid rgba(255, 255, 255, 0.1);
+}
+
+/* ☀️ Light Theme */
+body.light-theme .project-card {
+  background: white;
+  border: 1px solid #d3d3d3;
+}
+
+body.light-theme .project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(223, 60, 57, 0.15);
+  border-color: #df3c39;
+}
+body:not(.light-theme) .project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(223, 60, 57, 0.15);
+  border-color: #df3c39;
+}
+
+.project-card.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.project-image {
+  background: rgba(255, 255, 255, 0.05);
+  width: 100%;
+  height: 280px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.window-controls {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.control-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.control-dot.red {
+  background: #ef4444;
+}
+.control-dot.yellow {
+  background: #facc15;
+}
+.control-dot.green {
+  background: #4ade80;
+}
+
+.image-content {
+  flex: 1;
+  overflow: hidden;
+}
+
+.image-content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover .image-content img {
+  transform: scale(1.05);
+}
+
+.project-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  margin-left: 5px;
+}
+.light-theme .main-title {
+  color: #000;
+  background: transparent;
+}
+.light-theme .sub-title {
+  color: #000;
+  background: transparent;
+}
+
+.main-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: white;
+  line-height: 1.3;
+}
+
+.sub-title {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.875rem;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  line-height: 1.4;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0.25rem 0;
+  margin-left: 0px;
+}
+
+.tech-tag {
+  background: #f29c99;
+  color: #000;
+  padding: 0.25rem 0.5rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.buttons {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: auto;
+}
+
+.btn {
+  flex: 1;
+  padding: 0.5rem;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.875rem;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-primary {
+  background: #df3c39;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #df3c39;
+  transform: translateY(-2px);
+}
+
+body:not(.light-theme) .btn-secondary {
+  color: #fff;
+  border: 2px solid #fff;
+  background: transparent;
+}
+
+body:not(.light-theme) .btn-secondary:hover {
+  background: #fff;
+  color: #dc2626;
+  transform: translateY(-2px);
+}
+
+/* Light theme button styles */
+body.light-theme .btn-secondary {
+  color: #dc2626;
+  border: 2px solid #dc2626;
+  background: transparent;
+}
+
+body.light-theme .btn-secondary:hover {
+  background: #fff;
+  color: #dc2626;
+  transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .project-card {
+    max-width: 100%;
+    height: 380px;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 1rem;
+  }
+
+  .projects-section {
+    padding: 2rem 0;
+  }
+
+  .project-card {
+    height: 360px;
+    padding: 1.25rem;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
