@@ -157,11 +157,11 @@ body {
 /* scroll down */
 .mouse-btn {
   border: 3px solid #df3c39;
-  border-radius: 20px;
-  width: 55px;
-  height: 65px;
+  border-radius: 45px;
+  width: 45px;
+  height: 80px;
   display: flex;
-  margin: 130px 50px 30px 50px;
+  margin: 570px auto 20px;
   padding: 5px;
 }
 
@@ -187,7 +187,7 @@ body {
 /* home page */
 
 .home-page {
-  height: 100vh;
+  height: 97vh;
   overflow-x: hidden;
 }
 
@@ -360,24 +360,28 @@ path {
 }
 .name2 {
   margin: 5px;
-  margin-left: 10px;
-  font-size: 1.3rem;
+  margin-bottom: 30px;
+  font-size: 2rem;
 }
 .name3 {
   color: #ffffff;
-  background: #df3c39;
-  font-size: 1.3rem;
+  font-size: 2rem;
   padding: 2px;
 }
 .name3::selection {
   background-color: #ffffff;
   color: #df3c39;
 }
-.role {
-  line-height: 95px;
-  font-size: 5rem;
-  margin: 5px;
-  margin-bottom: 12px;
+.typing-banner-container {
+  max-width: 800px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.typing-banner img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .resume-contact {
@@ -443,8 +447,8 @@ path {
   transition-duration: 200ms;
 }
 .coder-img {
-  width: 350px; /* or use vw/vh but make them equal */
-  height: 350px;
+  width: 400px; /* or use vw/vh but make them equal */
+  height: 400px;
   position: absolute;
   right: 130px;
   top: 55px;
@@ -465,13 +469,11 @@ path {
   font-size: 1.15rem;
 }
 .intro-container {
-  position: absolute;
-  top: 500px;
-  left: 80px;
   display: flex;
   justify-content: space-between;
-  width: 80%;
-  left: 13.5%;
+  width: 500px;
+  line-height: 34px;
+  letter-spacing: 0.1em;
 }
 /* responsive home page */
 
@@ -486,7 +488,7 @@ path {
   .intro1,
   .intro2,
   .intro3 {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   .coder-img {
     display: none;
@@ -878,6 +880,67 @@ body {
 
   color: white;
 }
+/* project */
+
+.pro-toggle-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+  gap: 1rem;
+}
+
+.pro-toggle-btn {
+  padding: 12px 32px;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  backdrop-filter: blur(10px);
+  position: relative;
+  overflow: hidden;
+}
+
+.pro-toggle-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  transition: left 0.5s ease;
+}
+
+.pro-toggle-btn:hover::before {
+  left: 100%;
+}
+
+.pro-toggle-btn:hover {
+  transform: translateY(-2px);
+  border-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.pro-toggle-btn.active {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-color: rgba(255, 255, 255, 0.6);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+}
+
+.pro-toggle-btn.active:hover {
+  box-shadow: 0 12px 35px rgba(102, 126, 234, 0.6);
+}
 .projects-section {
   max-width: 1200px;
   margin: 0 auto;
@@ -1079,7 +1142,7 @@ body:not(.light-theme) .project-card:hover {
 
 body:not(.light-theme) .btn-secondary {
   color: #fff;
-  border: 2px solid #fff;
+  border: 1px solid #fff;
   background: transparent;
 }
 
@@ -1092,7 +1155,7 @@ body:not(.light-theme) .btn-secondary:hover {
 /* Light theme button styles */
 body.light-theme .btn-secondary {
   color: #dc2626;
-  border: 2px solid #dc2626;
+  border: 1px solid #dc2626;
   background: transparent;
 }
 
