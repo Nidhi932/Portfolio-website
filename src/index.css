@@ -468,6 +468,7 @@ path {
   transition-duration: 200ms;
 }
 .coder-img {
+  display: block;
   width: 400px; /* or use vw/vh but make them equal */
   height: 400px;
   position: absolute;
@@ -734,11 +735,7 @@ body:not(.light-theme) .skills-description {
   background-repeat: no-repeat;
   background-size: 1500px 700px;
 }
-@media (max-width: 1285px) {
-  .contact-page {
-    background: none;
-  }
-}
+
 .contact-title {
   display: flex;
   align-items: center;
