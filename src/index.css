@@ -313,7 +313,7 @@ path {
   transform: scale(1) rotate(360deg);
 }
 
-@media (max-width: 563px) {
+@media (max-width: 696px) {
   .nav-text {
     display: none;
   }
@@ -337,6 +337,27 @@ path {
     margin: 5px;
     width: 38.2px;
     height: 31.2px;
+  }
+
+    .info-box {
+    top: 55px;
+    padding: 0px;
+  }
+  .role {
+    font-size: 4rem;
+  }
+  .intro1,
+  .intro2,
+  .intro3 {
+    font-size: 1.2rem;
+  }
+  .coder-img {
+    display: none;
+  }
+    .intro-container {
+    display: flex;
+    top: 445px;
+    left: 40px;
   }
 }
 /* home page */
@@ -477,38 +498,14 @@ path {
 }
 /* responsive home page */
 
-@media (max-width: 563px) {
-  .info-box {
-    top: 55px;
-    padding: 0px;
-  }
-  .role {
-    font-size: 4rem;
-  }
-  .intro1,
-  .intro2,
-  .intro3 {
-    font-size: 1.2rem;
-  }
-  .coder-img {
-    display: none;
-  }
-}
+
 @media (max-width: 1285px) {
-  .coder-img {
-    display: none;
-  }
+
   .contact-page {
     background: none;
   }
 }
-@media (max-width: 563px) {
-  .intro-container {
-    display: flex;
-    top: 445px;
-    left: 40px;
-  }
-}
+
 
 /* About page */
 
